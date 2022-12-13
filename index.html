@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+<body class=" blue-grey">
+    <nav class="black darken-3"> </nav>
+<!-- Material box -->
+<div class="container">
+    <h3 class=" brown-text text-darken-2 card-panel hoverable grey lighten-1">Media-(Material Box)</h3>
+    <div class="row ">
+        <div class="col s12 m4 l3 ">
+            <img src="img1.jpg" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 m4 l3">
+            <img src="img2.jpg" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 m4 l3 hide-on-med-only">
+            <img src="img6.jpg" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 m4 l3 ">
+            <img src="img7.jpg" alt="" class="responsive-img materialboxed">
+        </div>
+    </div>
+</div>
+<br>br
+<!-- SLider -->
+<div class="container"><h3 class=" brown-text text-darken-2 card-panel hoverable grey lighten-1 center">Slider</h3> </div>
+<div class="slider">
+    <ul class="slides">
+        <li>
+            <img src="img3.jpg" alt="">
+             <div class="caption valign-wrapper">
+                <h4>Stay At The Winning Side.</h4>
+                <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h6>
+             </div>
+        </li>
+        <li>
+            <img src="img7.jpg" alt="">
+             <div class="caption left-align">
+                <h4>Stay At The Winning Side.</h4>
+                <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h6>
+             </div>
+        </li>
+        <li>
+            <img src="img4.jpg" alt="">
+             <div class="caption right-align">
+                <h4>Stay At The Winning Side.</h4>
+                <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h6>
+             </div>
+        </li>
+        <li>
+            <img src="img5.jpg" alt="">
+             <div class="caption center-align">
+                <h4>Stay At The Winning Side.</h4>
+                <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h6>
+             </div>
+        </li>
+        <li>
+            <img src="img1.jpg" alt="">
+             <div class="caption left-align">
+                <h4>Stay At The Winning Side.</h4>
+                <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h6>
+             </div>
+        </li>
+        <li>
+            <img src="img2.jpg" alt="">
+             <div class="caption right-align">
+                <h4>Stay At The Winning Side.</h4>
+                <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h6>
+             </div>
+        </li>
+    </ul>
+</div>
+ 
+
+
+
+   <div style="height: 800px;"></div>
+            <!-- Jquery CDN -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+  <!-- Initialization -->
+  <script>
+    $(document).ready(function(){
+    $('.materialboxed').materialbox({
+        inDuration:100,
+        outDuration:1000
+    });
+    // Slider Init
+    $('.slider').slider({
+        indicators:false,
+        height: 700,
+        duration: 1000,
+        interval: 2000
+    });
+});
+    
+    
+  </script>
+</body>
+</html>
